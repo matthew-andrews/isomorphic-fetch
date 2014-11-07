@@ -1,7 +1,7 @@
 isomorphic-fetch
 ================
 
-Fetch for node and Browserify.  Built on top of [GitHub's WHATWG Fetch polyfill](https://github.com/fetch).
+Fetch for node and Browserify.  Built on top of [GitHub's WHATWG Fetch polyfill](https://github.com/github/fetch).
 
 ## Warnings
 
