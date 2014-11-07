@@ -17,7 +17,7 @@ npm install --save isomorphic-fetch es6-promise
 ## Usage
 
 ```js
-require('es6-promsie').polyfill();
+require('es6-promise').polyfill();
 require('isomorphic-fetch');
 
 fetch('https://offline-news-api.herokuapp.com/stories')
