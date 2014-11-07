@@ -1,4 +1,3 @@
-require('es6-promise').polyfill();
 global.XMLHttpRequest = require('xmlhttprequest').XMLHttpRequest;
 var noConflictWindow = global.window;
 global.window = {};
