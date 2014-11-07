@@ -1,4 +1,4 @@
 node-fetch
 ==========
 
-Fetch for node
+Fetch for node and the browser
