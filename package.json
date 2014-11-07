@@ -1,5 +1,5 @@
 {
-  "name": "node-fetch",
+  "name": "isomorphic-fetch",
   "version": "0.0.0",
   "description": "Fetch for node",
   "browser": "client.js"
