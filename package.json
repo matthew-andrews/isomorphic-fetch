@@ -2,7 +2,7 @@
   "name": "isomorphic-fetch",
   "version": "0.0.0",
   "description": "Fetch for node",
-  "browser": "client.js"
+  "browser": "client.js",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
