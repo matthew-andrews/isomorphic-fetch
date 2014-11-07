@@ -19,7 +19,7 @@
   "homepage": "https://github.com/matthew-andrews/node-fetch",
   "dependencies": {
     "es6-promise": "^2.0.0",
-    "fetch": "git://github.com/github/fetch",
+    "fetch": "git+https://github.com/matthew-andrews/fetch.git#window",
     "xmlhttprequest": "^1.6.0"
   }
 }
