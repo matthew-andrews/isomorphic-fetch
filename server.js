@@ -4,3 +4,4 @@ global.window = {};
 require('fetch');
 global.fetch = global.window.fetch;
 global.window = noConflictWindow;
+module.exports = global.fetch;
