@@ -10,8 +10,16 @@ Fetch for node and Browserify.  Built on top of [GitHub's WHATWG Fetch polyfill]
 
 ## Installation
 
+### NPM
+
 ```sh
 npm install --save isomorphic-fetch es6-promise
+```
+
+### Bower
+
+```sh
+bower install --save isomorphic-fetch es6-promise
 ```
 
 ## Usage
