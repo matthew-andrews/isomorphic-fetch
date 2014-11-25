@@ -1,0 +1,7 @@
+{
+  "name": "isomorphic-fetch",
+  "main": ["client.js"],
+  "dependencies": {
+    "fetch": "*"
+  }
+}
