@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/matthew-andrews/node-fetch",
   "dependencies": {
-    "fetch": "git://github.com/github/fetch",
+    "fetch": "git://github.com/github/fetch#self",
     "xmlhttprequest": "^1.6.0"
   }
 }

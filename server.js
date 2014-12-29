@@ -1,6 +1,6 @@
 global.XMLHttpRequest = require('xmlhttprequest').XMLHttpRequest;
-var noConflictWindow = global.window;
-global.window = {};
+var noConflictSelf = global.self;
+global.self = {};
 require('fetch');
-global.fetch = global.window.fetch;
-global.window = noConflictWindow;
+global.fetch = global.self.fetch;
+global.self = noConflictSelf;
