@@ -2,6 +2,6 @@
   "name": "isomorphic-fetch",
   "main": ["client.js"],
   "dependencies": {
-    "fetch": "<=0.3.2"
+    "fetch": ">=0.4.0"
   }
 }
