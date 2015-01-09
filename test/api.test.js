@@ -1,4 +1,5 @@
-/*global describe, it*/
+/*global describe, it, before, fetch*/
+"use strict";
 
 require('es6-promise').polyfill();
 require('../server');

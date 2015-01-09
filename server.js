@@ -1,3 +1,5 @@
+"use strict";
+
 global.XMLHttpRequest = require('xmlhttprequest').XMLHttpRequest;
 var noConflictSelf = global.self;
 global.self = {};
