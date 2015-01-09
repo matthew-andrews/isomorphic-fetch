@@ -5,7 +5,8 @@
   "browser": "client.js",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "files": "find . -name '*.js' ! -path './node_modules/*' ! -path './bower_components/*'",
+    "test": "jshint `npm run -s files` && lintspaces -i js-comments -e .editorconfig `npm run -s files` && mocha"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,13 @@
   "dependencies": {
     "fetch": "git://github.com/github/fetch",
     "xmlhttprequest": "^1.6.0"
+  },
+  "devDependencies": {
+    "chai": "^1.10.0",
+    "es6-promise": "^2.0.1",
+    "jshint": "^2.5.11",
+    "lintspaces-cli": "0.0.4",
+    "mocha": "^2.1.0",
+    "nock": "^0.56.0"
   }
 }
