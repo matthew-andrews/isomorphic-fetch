@@ -5,7 +5,7 @@
   "browser": "client.js",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,11 @@
   "dependencies": {
     "fetch": "git://github.com/github/fetch",
     "xmlhttprequest": "^1.6.0"
+  },
+  "devDependencies": {
+    "chai": "^1.10.0",
+    "es6-promise": "^2.0.1",
+    "mocha": "^2.1.0",
+    "nock": "^0.56.0"
   }
 }
