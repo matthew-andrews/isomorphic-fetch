@@ -2,7 +2,7 @@
   "name": "isomorphic-fetch",
   "version": "1.1.0",
   "description": "Isomorphic WHATWG Fetch API, for Node & Browserify",
-  "browser": "client.js",
+  "browser": "npm-client.js",
   "main": "server.js",
   "scripts": {
     "files": "find . -name '*.js' ! -path './node_modules/*' ! -path './bower_components/*'",
@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/matthew-andrews/node-fetch",
   "dependencies": {
-    "fetch": "git://github.com/github/fetch",
+    "whatwg-fetch": "git://github.com/github/fetch",
     "xmlhttprequest": "^1.6.0"
   },
   "devDependencies": {
