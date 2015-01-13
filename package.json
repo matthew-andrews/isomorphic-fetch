@@ -20,7 +20,7 @@
   "homepage": "https://github.com/matthew-andrews/node-fetch",
   "dependencies": {
     "whatwg-fetch": "^0.5.0",
-    "xmlhttprequest": "^1.6.0"
+    "xmlhttprequest": "matthew-andrews/node-XMLHttpRequest"
   },
   "devDependencies": {
     "chai": "^1.10.0",
