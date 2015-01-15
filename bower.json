@@ -1,7 +1,9 @@
 {
   "name": "isomorphic-fetch",
-  "main": ["client.js"],
+  "main": [
+    "client.js"
+  ],
   "dependencies": {
-    "fetch": ">=0.4.0"
+    "fetch": "Financial-Times/fetch#^0.6.0"
   }
 }
