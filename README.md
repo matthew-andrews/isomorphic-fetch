@@ -28,7 +28,7 @@ bower install --save isomorphic-fetch es6-promise
 require('es6-promise').polyfill();
 require('isomorphic-fetch');
 
-fetch('https://offline-news-api.herokuapp.com/stories')
+fetch('//offline-news-api.herokuapp.com/stories')
 	.then(function(response) {
 		if (response.status >= 400) {
 			throw new Error("Bad response from server");
