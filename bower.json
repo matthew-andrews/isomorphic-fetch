@@ -2,6 +2,6 @@
   "name": "isomorphic-fetch",
   "main": ["client.js"],
   "dependencies": {
-    "fetch": "matthew-andrews/fetch"
+    "fetch": "matthew-andrews/fetch#master"
   }
 }
