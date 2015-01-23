@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/matthew-andrews/node-fetch",
   "dependencies": {
-    "whatwg-fetch": "^0.5.0",
+    "whatwg-fetch": "matthew-andrews/fetch",
     "xmlhttprequest": "matthew-andrews/node-XMLHttpRequest"
   },
   "devDependencies": {
