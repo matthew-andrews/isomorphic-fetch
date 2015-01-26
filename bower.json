@@ -2,6 +2,6 @@
   "name": "isomorphic-fetch",
   "main": ["client.js"],
   "dependencies": {
-    "fetch": "^0.7.0"
+    "fetch": "matthew-andrews/fetch#ie9"
   }
 }
