@@ -19,8 +19,8 @@
   },
   "homepage": "https://github.com/matthew-andrews/node-fetch",
   "dependencies": {
-    "whatwg-fetch": "matthew-andrews/fetch#ie9",
-    "xmlhttprequest": "matthew-andrews/node-XMLHttpRequest"
+    "node-fetch": "^1.0.1",
+    "whatwg-fetch": "matthew-andrews/fetch#ie9"
   },
   "devDependencies": {
     "chai": "^1.10.0",

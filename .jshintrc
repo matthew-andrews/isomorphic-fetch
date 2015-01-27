@@ -1,5 +1,5 @@
 {
   "node": true,
   "browser": true,
-  "predef": ["describe", "it", "before", "fetch"]
+  "predef": ["describe", "it", "before"]
 }
