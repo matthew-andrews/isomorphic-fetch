@@ -8,7 +8,7 @@ global.Headers = global.self.Headers;
 global.Request = global.self.Request;
 global.Response = global.self.Response;
 var realFetch = global.self.fetch;
-global.fetch = function(url, options) {
+module.exports = global.fetch = function(url, options) {
 	if (/^\/\//.test(url)) {
 		url = 'https:' + url;
 	}
