@@ -1,6 +1,6 @@
 {
   "name": "isomorphic-fetch",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "Isomorphic WHATWG Fetch API, for Node & Browserify",
   "browser": "npm-client.js",
   "main": "server.js",
