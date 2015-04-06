@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/matthew-andrews/node-fetch.git"
+    "url": "https://github.com/matthew-andrews/isomorphic-fetch.git"
   },
   "author": "Matt Andrews <matt@mattandre.ws>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/matthew-andrews/node-fetch/issues"
+    "url": "https://github.com/matthew-andrews/isomorphic-fetch/issues"
   },
-  "homepage": "https://github.com/matthew-andrews/node-fetch",
+  "homepage": "https://github.com/matthew-andrews/isomorphic-fetch/issues",
   "dependencies": {
     "node-fetch": "^1.0.1",
     "whatwg-fetch": "matthew-andrews/fetch#ie9"
