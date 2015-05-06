@@ -2,7 +2,7 @@
 "use strict";
 
 require('es6-promise').polyfill();
-require('../server');
+require('../etch-npm-node');
 var expect = require('chai').expect;
 var nock = require('nock');
 var good = 'hello world. 你好世界。';

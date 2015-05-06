@@ -2,8 +2,8 @@
   "name": "isomorphic-fetch",
   "version": "0.0.0",
   "description": "Isomorphic WHATWG Fetch API, for Node & Browserify",
-  "browser": "npm-client.js",
-  "main": "server.js",
+  "browser": "fetch-npm-browserify.js",
+  "main": "fetch-npm-node.js",
   "scripts": {
     "files": "find . -name '*.js' ! -path './node_modules/*' ! -path './bower_components/*'",
     "test": "jshint `npm run -s files` && lintspaces -i js-comments -e .editorconfig `npm run -s files` && mocha"
