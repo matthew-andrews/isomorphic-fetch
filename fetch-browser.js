@@ -3,4 +3,7 @@
 //
 // Return that as the export for use in Webpack, Browserify etc.
 require('whatwg-fetch');
-module.exports = self.fetch;
+var globalFetch = fetch;
+delete global.fetch;
+
+module.exports = globalFetch;
