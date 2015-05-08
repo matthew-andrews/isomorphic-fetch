@@ -40,6 +40,13 @@ fetch('//offline-news-api.herokuapp.com/stories')
 	});
 ```
 
+If you don't want a global:
+
+```js
+var fetch = require('isomorphic-fetch/safe');
+typeof global.fetch === 'undefined'
+```
+
 ## License
 
 All open source code released by FT Labs is licenced under the MIT licence.  Based on [the fine work by](https://github.com/github/fetch/pull/31) **[jxck](https://github.com/Jxck)**.
