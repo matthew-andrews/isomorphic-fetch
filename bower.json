@@ -1,6 +1,6 @@
 {
   "name": "isomorphic-fetch",
-  "main": ["client.js"],
+  "main": ["fetch-bower.js"],
   "dependencies": {
     "fetch": "github/fetch#^0.8.2"
   }
