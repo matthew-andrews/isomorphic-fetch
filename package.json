@@ -20,7 +20,7 @@
   "homepage": "https://github.com/matthew-andrews/isomorphic-fetch/issues",
   "dependencies": {
     "node-fetch": "^1.0.1",
-    "whatwg-fetch": "matthew-andrews/fetch#ie9"
+    "whatwg-fetch": "^0.8.2"
   },
   "devDependencies": {
     "chai": "^1.10.0",
