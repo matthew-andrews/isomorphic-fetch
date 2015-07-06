@@ -7,7 +7,11 @@ module.exports = function(url, options) {
 	}
 	return realFetch.call(this, url, options);
 };
+module.exports.Response = realFetch.Response;
+module.exports.Headers = realFetch.Headers;
+module.exports.Request = realFetch.Request;
 
-if (!global.fetch) {
-	global.fetch = module.exports;
-}
+global.fetch || (global.fetch = module.exports);
+global.Response || (global.Response = module.exports.Response);
+global.Headers || (global.Headers = module.exports.Headers);
+global.Request || (global.Request = module.exports.Request);
