@@ -1,4 +1,7 @@
-/*global fetch*/
+/*global fetch */
+/*global Response*/
+/*global Headers*/
+/*global Request*/
 "use strict";
 
 require('es6-promise').polyfill();
@@ -24,8 +27,20 @@ describe('fetch', function() {
 			.reply(404, bad);
 	});
 
-	it('should be defined', function() {
+	it('should expose fetch globally', function() {
 		expect(fetch).to.be.a('function');
+	});
+
+	it('should expose Response globally', function() {
+		expect(Response).to.be.a('function');
+	});
+
+	it('should expose Headers globally', function() {
+		expect(Headers).to.be.a('function');
+	});
+
+	it('should expose Request globally', function() {
+		expect(Request).to.be.a('function');
 	});
 
 	it('should facilitate the making of requests', function(done) {
