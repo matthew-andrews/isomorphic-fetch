@@ -17,7 +17,7 @@ var isomorphicFetch = function(url, options) {
 module.exports = isomorphicFetch;
 
 if (!global.fetch) {
-	global.fetch = module.exports;
+	global.fetch = isomorphicFetch;
 	global.Response = realFetch.Response;
 	global.Headers = realFetch.Headers;
 	global.Request = realFetch.Request;
