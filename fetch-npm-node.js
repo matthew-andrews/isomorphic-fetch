@@ -10,7 +10,7 @@ module.exports = function(url, options) {
 
 if (!global.fetch) {
 	global.fetch = module.exports;
-	global.Response = realFetch.Response;
-	global.Headers = realFetch.Headers;
-	global.Request = realFetch.Request;
+	global.Response = module.exports.Response = realFetch.Response;
+	global.Headers = module.exports.Headers = realFetch.Headers;
+	global.Request = module.exports.Request = realFetch.Request;
 }
