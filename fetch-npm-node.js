@@ -1,16 +1,21 @@
 "use strict";
 
-var realFetch = require('node-fetch');
-module.exports = function(url, options) {
-	if (/^\/\//.test(url)) {
-		url = 'https:' + url;
-	}
-	return realFetch.call(this, url, options);
-};
+var realFetch = (typeof window === 'undefined')
+  ? require('node-fetch')
+  : require('whatwg-fetch');
 
-if (!global.fetch) {
-	global.fetch = module.exports;
-	global.Response = realFetch.Response;
-	global.Headers = realFetch.Headers;
-	global.Request = realFetch.Request;
+module.exports = realFetch;
+
+if (typeof window !== 'undefined' && !window.fetch) {
+  window.fetch = module.exports;
+  window.Response = realFetch.Response;
+  window.Headers = realFetch.Headers;
+  window.Request = realFetch.Request;
+}
+
+if (typeof global !== 'undefined' && !window.fetch) {
+  global.fetch = module.exports;
+  global.Response = realFetch.Response;
+  global.Headers = realFetch.Headers;
+  global.Request = realFetch.Request;
 }
