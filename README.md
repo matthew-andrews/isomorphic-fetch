@@ -40,6 +40,19 @@ fetch('//offline-news-api.herokuapp.com/stories')
 	});
 ```
 
+### webpack
+
+If you're using webpack with `target: node` (e.g. for testing), you can avoid warnings about the dynamic `require` by adding the following to your configuration ([more info](andris9/encoding#16)):
+
+```js
+{
+  module: {
+    exprContextRegExp: /$^/,
+    exprContextCritical: false
+  }
+}
+```
+
 ## License
 
 All open source code released by FT Labs is licenced under the MIT licence.  Based on [the fine work by](https://github.com/github/fetch/pull/31) **[jxck](https://github.com/Jxck)**.
