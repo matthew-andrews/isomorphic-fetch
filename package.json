@@ -1,8 +1,8 @@
 {
-  "name": "isomorphic-fetch",
+  "name": "universal-fetch",
   "version": "0.0.0",
-  "description": "Isomorphic WHATWG Fetch API, for Node & Browserify",
-  "browser": "fetch-npm-browserify.js",
+  "description": "Universal WHATWG Fetch API, for Node & Browser with IE8 support",
+  "browser": "fetch-npm-browser.js",
   "main": "fetch-npm-node.js",
   "scripts": {
     "files": "find . -name '*.js' ! -path './node_modules/*' ! -path './bower_components/*'",
@@ -10,23 +10,23 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/matthew-andrews/isomorphic-fetch.git"
+    "url": "https://github.com/Pitzcarraldo/universal-fetch.git"
   },
-  "author": "Matt Andrews <matt@mattandre.ws>",
+  "author": "Minkyu Cho <mrnoname@naver.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/matthew-andrews/isomorphic-fetch/issues"
+    "url": "https://github.com/Pitzcarraldo/universal-fetch/issues"
   },
-  "homepage": "https://github.com/matthew-andrews/isomorphic-fetch/issues",
+  "homepage": "https://github.com/Pitzcarraldo/universal-fetch/issues",
   "dependencies": {
-    "node-fetch": "^1.0.1",
-    "whatwg-fetch": ">=0.10.0"
+    "fetch-ie8": "^1.4.0",
+    "node-fetch": "^1.3.3"
   },
   "devDependencies": {
     "chai": "^1.10.0",
     "es6-promise": "^2.0.1",
     "jshint": "^2.5.11",
-    "lintspaces-cli": "0.0.4",
+    "lintspaces-cli": "^0.1.1",
     "mocha": "^2.1.0",
     "nock": "^0.56.0",
     "npm-prepublish": "^1.0.2"

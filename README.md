@@ -1,7 +1,7 @@
-isomorphic-fetch [![Build Status](https://travis-ci.org/matthew-andrews/isomorphic-fetch.svg?branch=master)](https://travis-ci.org/matthew-andrews/isomorphic-fetch)
+Universal-Fetch [![Build Status](https://travis-ci.org/Pitzcarraldo/universal-fetch.svg?branch=master)](https://travis-ci.org/Pitzcarraldo/universal-fetch)
 ================
 
-Fetch for node and Browserify.  Built on top of [GitHub's WHATWG Fetch polyfill](https://github.com/github/fetch).
+Fetch for node and browser (Webpack, Browserify) with IE8 support. Built on top of [GitHub's WHATWG Fetch polyfill](https://github.com/github/fetch).
 
 ## Warnings
 
@@ -13,20 +13,20 @@ Fetch for node and Browserify.  Built on top of [GitHub's WHATWG Fetch polyfill]
 ### NPM
 
 ```sh
-npm install --save isomorphic-fetch es6-promise
+npm install --save universal-fetch es6-promise
 ```
 
 ### Bower
 
 ```sh
-bower install --save isomorphic-fetch es6-promise
+bower install --save universal-fetch es6-promise
 ```
 
 ## Usage
 
 ```js
 require('es6-promise').polyfill();
-require('isomorphic-fetch');
+require('universal-fetch');
 
 fetch('//offline-news-api.herokuapp.com/stories')
 	.then(function(response) {
