@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "description": "Isomorphic WHATWG Fetch API, for Node & Browserify",
   "browser": "fetch-npm-browserify.js",
+  "react-native": "fetch-npm-react-native.js",
   "main": "fetch-npm-node.js",
   "scripts": {
     "files": "find . -name '*.js' ! -path './node_modules/*' ! -path './bower_components/*'",
