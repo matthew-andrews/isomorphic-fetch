@@ -30,8 +30,13 @@ bower install --save isomorphic-fetch es6-promise
 ## Usage
 
 ```js
+// If using ES5
 require('es6-promise').polyfill();
 require('isomorphic-fetch');
+
+//If using ES6
+import { polyfill } from 'es6-promise';
+import 'isomorphic-fetch';
 
 fetch('//offline-news-api.herokuapp.com/stories')
 	.then(function(response) {
