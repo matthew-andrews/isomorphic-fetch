@@ -8,6 +8,11 @@ Fetch for node and Browserify.  Built on top of [GitHub's WHATWG Fetch polyfill]
 - This adds `fetch` as a global so that its API is consistent between client and server.
 - You must bring your own ES6 Promise compatible polyfill, I suggest [es6-promise](https://github.com/jakearchibald/es6-promise).
 
+For [ease-of-maintenance and backward-compatibility reasons][why polyfill], this library will always be a polyfill. As a "safe" alternative, which does not modify the global, consider [fetch-ponyfill][].
+
+[why polyfill]: https://github.com/matthew-andrews/isomorphic-fetch/issues/31#issuecomment-149668361
+[fetch-ponyfill]: https://github.com/qubyte/fetch-ponyfill
+
 ## Installation
 
 ### NPM
