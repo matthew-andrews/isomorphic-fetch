@@ -29,7 +29,7 @@ describe('fetch', function() {
 	});
 
 	it('should facilitate the making of requests', function(done) {
-		fetch('//mattandre.ws/succeed.txt')
+		fetch('https://mattandre.ws/succeed.txt')
 			.then(responseToText)
 			.then(function(data) {
 				expect(data).to.equal(good);
@@ -39,7 +39,7 @@ describe('fetch', function() {
 	});
 
 	it('should do the right thing with bad requests', function(done) {
-		fetch('//mattandre.ws/fail.txt')
+		fetch('https://mattandre.ws/fail.txt')
 			.then(responseToText)
 			.catch(function(err) {
 				expect(err.toString()).to.equal("Error: Bad server response");
