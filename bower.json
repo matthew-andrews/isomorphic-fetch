@@ -1,7 +1,7 @@
 {
-  "name": "isomorphic-fetch",
+  "name": "universal-fetch",
   "main": ["fetch-bower.js"],
   "dependencies": {
-    "fetch": "github/fetch#>=0.10.0"
+    "fetch": "camsong/fetch-ie8#v1.4.0"
   }
 }
