@@ -27,6 +27,12 @@ npm install --save isomorphic-fetch es6-promise
 bower install --save isomorphic-fetch es6-promise
 ```
 
+### Yarn
+
+```sh
+yarn add isomorphic-fetch es6-promise
+```
+
 ## Usage
 
 ```js
