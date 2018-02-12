@@ -13,4 +13,5 @@ if (!global.fetch) {
 	global.Response = realFetch.Response;
 	global.Headers = realFetch.Headers;
 	global.Request = realFetch.Request;
+	global.FetchError = realFetch.FetchError;
 }
