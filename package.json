@@ -28,7 +28,7 @@
     "jshint": "^2.5.11",
     "lintspaces-cli": "^0.1.1",
     "mocha": "^2.1.0",
-    "nock": "^0.56.0",
+    "nock": "^9.1.6",
     "npm-prepublish": "^1.0.2"
   }
 }
