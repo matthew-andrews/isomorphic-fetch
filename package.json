@@ -2,8 +2,6 @@
   "name": "isomorphic-fetch",
   "version": "0.0.0",
   "description": "Isomorphic WHATWG Fetch API, for Node & Browserify",
-  "browser": "fetch-npm-browserify.js",
-  "main": "fetch-npm-node.js",
   "scripts": {
     "files": "find . -name '*.js' ! -path './node_modules/*' ! -path './bower_components/*'",
     "test": "jshint `npm run -s files` && lintspaces -i js-comments -e .editorconfig `npm run -s files` && mocha"
@@ -19,8 +17,7 @@
   },
   "homepage": "https://github.com/matthew-andrews/isomorphic-fetch/issues",
   "dependencies": {
-    "node-fetch": "^1.0.1",
-    "whatwg-fetch": ">=0.10.0"
+    "fetch-ponyfill": "^5.0.1"
   },
   "devDependencies": {
     "chai": "^1.10.0",
