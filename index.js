@@ -1,12 +1,12 @@
-"use strict";
-
-var realFetch = require('node-fetch');
-module.exports = function(url, options) {
+var realFetch = require('fetch-ponyfill')({});
+function patchFetch(url, options) {
 	if (/^\/\//.test(url)) {
 		url = 'https:' + url;
 	}
 	return realFetch.call(this, url, options);
-};
+}
+
+module.exports = process.browser ? realFetch.bind(global) : patchFetch;
 
 if (!global.fetch) {
 	global.fetch = module.exports;
