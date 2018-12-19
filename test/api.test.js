@@ -28,24 +28,20 @@ describe('fetch', function() {
 		expect(fetch).to.be.a('function');
 	});
 
-	it('should facilitate the making of requests', function(done) {
-		fetch('//mattandre.ws/succeed.txt')
+	it('should facilitate the making of requests', function() {
+		return fetch('//mattandre.ws/succeed.txt')
 			.then(responseToText)
 			.then(function(data) {
 				expect(data).to.equal(good);
-				done();
-			})
-			.catch(done);
+			});
 	});
 
-	it('should do the right thing with bad requests', function(done) {
-		fetch('//mattandre.ws/fail.txt')
+	it('should do the right thing with bad requests', function() {
+		return fetch('//mattandre.ws/fail.txt')
 			.then(responseToText)
 			.catch(function(err) {
 				expect(err.toString()).to.equal("Error: Bad server response");
-				done();
-			})
-			.catch(done);
+			});
 	});
 
 });
