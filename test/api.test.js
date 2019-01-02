@@ -13,39 +13,48 @@ function responseToText(response) {
 	return response.text();
 }
 
+function expectHeader(value) {
+	return function(response) {
+		expect(response.headers.get('X-Isomorphic')).to.equal(value);
+		return response;
+	};
+}
+
 describe('fetch', function() {
 
 	before(function() {
 		nock('https://mattandre.ws')
 			.get('/succeed.txt')
-			.reply(200, good);
+			.reply(200, good, {
+				'X-Isomorphic': 'good'
+			});
 		nock('https://mattandre.ws')
 			.get('/fail.txt')
-			.reply(404, bad);
+			.reply(404, bad, {
+				'X-Isomorphic': 'bad'
+			});
 	});
 
 	it('should be defined', function() {
 		expect(fetch).to.be.a('function');
 	});
 
-	it('should facilitate the making of requests', function(done) {
-		fetch('//mattandre.ws/succeed.txt')
+	it('should facilitate the making of requests', function() {
+		return fetch('//mattandre.ws/succeed.txt')
+			.then(expectHeader('good'))
 			.then(responseToText)
 			.then(function(data) {
 				expect(data).to.equal(good);
-				done();
-			})
-			.catch(done);
+			});
 	});
 
-	it('should do the right thing with bad requests', function(done) {
-		fetch('//mattandre.ws/fail.txt')
+	it('should do the right thing with bad requests', function() {
+		return fetch('//mattandre.ws/fail.txt')
+			.then(expectHeader('bad'))
 			.then(responseToText)
 			.catch(function(err) {
 				expect(err.toString()).to.equal("Error: Bad server response");
-				done();
-			})
-			.catch(done);
+			});
 	});
 
 });
