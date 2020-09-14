@@ -12,6 +12,10 @@ For [ease-of-maintenance and backward-compatibility reasons][why polyfill], this
 [why polyfill]: https://github.com/matthew-andrews/isomorphic-fetch/issues/31#issuecomment-149668361
 [fetch-ponyfill]: https://github.com/qubyte/fetch-ponyfill
 
+## Why Use Isomorphic Fetch
+
+The Fetch API is currently [not implemented consistently](http://caniuse.com/#search=fetch) across browsers. This module will enable you to use `fetch` in your Node code in a cross-browser compliant fashion. The Fetch API is part of the Web platform API defined by the standards bodies WHATWG and W3C.
+
 ## Installation
 
 ### NPM
