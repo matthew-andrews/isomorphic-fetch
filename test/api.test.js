@@ -1,7 +1,6 @@
 /*global fetch*/
 "use strict";
 
-require('es6-promise').polyfill();
 require('../fetch-npm-node');
 var expect = require('chai').expect;
 var nock = require('nock');
