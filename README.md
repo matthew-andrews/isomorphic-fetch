@@ -37,10 +37,13 @@ require('isomorphic-fetch');
 
 fetch('//offline-news-api.herokuapp.com/stories')
 	.then(function(response) {
-		if (response.status >= 400) {
+		if (response.status >= 200 || response.status < 400) {
+			return response.json();
+			
+		} else {
 			throw new Error("Bad response from server");
 		}
-		return response.json();
+		
 	})
 	.then(function(stories) {
 		console.log(stories);
