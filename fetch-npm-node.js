@@ -1,6 +1,6 @@
 "use strict";
 
-var realFetch = require('node-fetch');
+var realFetch = require('node-fetch').default;
 module.exports = function(url, options) {
 	if (/^\/\//.test(url)) {
 		url = 'https:' + url;
