@@ -33,18 +33,11 @@ bower install --save isomorphic-fetch
 ## Usage
 
 ```js
-require('isomorphic-fetch');
+import 'isomorphic-fetch'
 
-fetch('//offline-news-api.herokuapp.com/stories')
-	.then(function(response) {
-		if (response.status >= 400) {
-			throw new Error("Bad response from server");
-		}
-		return response.json();
-	})
-	.then(function(stories) {
-		console.log(stories);
-	});
+fetch('https://httpbin.org/get')
+  .then(res => res.json())
+  .then(console.log)
 ```
 
 ## License
