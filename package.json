@@ -15,9 +15,9 @@
   "author": "Redstone Team <dev@redstone.finance>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/redstone-finance/redstone-isomorphic-fetch/issues"
+    "url": "https://github.com/redstone-finance/isomorphic-fetch/issues"
   },
-  "homepage": "https://github.com/redstone-finance/redstone-isomorphic-fetch#readme",
+  "homepage": "https://github.com/redstone-finance/isomorphic-fetch#readme",
   "devDependencies": {
     "chai": "^4.2.0",
     "jshint": "^2.5.11",
