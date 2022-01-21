@@ -1,7 +1,7 @@
 {
   "name": "isomorphic-fetch",
-  "version": "3.0.0",
-  "description": "Isomorphic WHATWG Fetch API, for Node & Browserify",
+  "version": "1.0.0",
+  "description": "Isomorphic Fetch API for Node & Browserify",
   "browser": "fetch-npm-browserify.js",
   "main": "fetch-npm-node.js",
   "scripts": {
@@ -12,21 +12,17 @@
     "type": "git",
     "url": "https://github.com/matthew-andrews/isomorphic-fetch.git"
   },
-  "author": "Matt Andrews <matt@mattandre.ws>",
+  "author": "Redstone Team <dev@redstone.finance>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/matthew-andrews/isomorphic-fetch/issues"
+    "url": "https://github.com/redstone-finance/redstone-isomorphic-fetch/issues"
   },
-  "homepage": "https://github.com/matthew-andrews/isomorphic-fetch/issues",
-  "dependencies": {
-    "node-fetch": "^2.6.1",
-    "whatwg-fetch": "^3.4.1"
-  },
+  "homepage": "https://github.com/redstone-finance/redstone-isomorphic-fetch#readme",
   "devDependencies": {
     "chai": "^4.2.0",
     "jshint": "^2.5.11",
     "lintspaces-cli": "^0.7.1",
     "mocha": "^8.1.3",
-    "nock": "^13.0.4"
+    "undici": "^4.12.2"
   }
 }
