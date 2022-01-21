@@ -1,7 +1,6 @@
 "use strict";
 
-// var realFetch = require("node-fetch");
-var realFetch = require("undici").request;
+var realFetch = require("undici").fetch;
 module.exports = function (url, options) {
 	if (/^\/\//.test(url)) {
 		url = "https:" + url;

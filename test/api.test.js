@@ -13,8 +13,8 @@ var setGlobalDispatcher = require("undici").setGlobalDispatcher;
 setGlobalDispatcher(MockAgent);
 
 function responseToText(response) {
-	if (response.statusCode >= 400) throw new Error("Bad server response");
-	return response.body.json();
+	if (response.status >= 400) throw new Error("Bad server response");
+	return response.json();
 }
 
 describe("fetch", function () {
