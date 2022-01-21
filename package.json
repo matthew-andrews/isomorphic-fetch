@@ -1,6 +1,6 @@
 {
   "name": "redstone-isomorphic-fetch",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Isomorphic Fetch API for Node & Browserify",
   "browser": "fetch-npm-browserify.js",
   "main": "fetch-npm-node.js",
