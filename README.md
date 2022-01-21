@@ -1,6 +1,6 @@
 # redstone-isomorphic-fetch
 
-Redstone's isomorphic-fetch is an implementation of [isomorphic-fetch](https://github.com/matthew-andrews/isomorphic-fetch)
+Redstone's isomorphic-fetch is a fork of [isomorphic-fetch](https://github.com/matthew-andrews/isomorphic-fetch).
 It adds `fetch` as global so its API is consistent between client and server. It uses standard fetch() method on client's side and [undici](https://github.com/nodejs/undici) - which is a http client written for Node.js - on server's side.
 
 ## Installation
@@ -26,7 +26,7 @@ bower install --save redstone-isomorphic-fetch
 ## Usage
 
 ```js
-import "isomorphic-fetch";
+import "redstone-isomorphic-fetch";
 
 fetch("//api.redstone.finance")
   .then(function (response) {
