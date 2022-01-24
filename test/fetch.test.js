@@ -1,14 +1,14 @@
 /*global fetch*/
 "use strict";
 
-require("../fetch-npm-node");
+require("../npm-node");
 var expect = require("chai").expect;
 var good = {
 	message: "hello, i'm fine",
 	status: "success",
 };
 
-var MockAgent = require("./api-mock.js");
+var MockAgent = require("./fetch-mock.js");
 var setGlobalDispatcher = require("undici").setGlobalDispatcher;
 setGlobalDispatcher(MockAgent);
 

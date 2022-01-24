@@ -1,6 +1,7 @@
 "use strict";
 
 var realFetch = require("undici").fetch;
+
 module.exports = function (url, options) {
 	if (/^\/\//.test(url)) {
 		url = "https:" + url;
@@ -14,3 +15,5 @@ if (!global.fetch) {
 	global.Headers = realFetch.Headers;
 	global.Request = realFetch.Request;
 }
+
+module.exports.v8 = require("v8");
