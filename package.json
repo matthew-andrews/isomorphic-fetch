@@ -1,6 +1,6 @@
 {
   "name": "redstone-isomorphic",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Isomorphic API for Node & Browserify",
   "browser": "npm-browserify.js",
   "main": "npm-node.js",
