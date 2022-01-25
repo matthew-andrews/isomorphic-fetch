@@ -22,7 +22,10 @@
     "chai": "^4.2.0",
     "jshint": "^2.5.11",
     "lintspaces-cli": "^0.7.1",
-    "mocha": "^8.1.3",
+    "mocha": "^8.1.3"
+  },
+  "dependencies": {
+    "whatwg-fetch": "^3.4.1",
     "undici": "^4.12.2"
   }
 }
