@@ -6,9 +6,9 @@ redstone-isomorphic is a fork of [isomorphic-fetch](https://github.com/matthew-a
 
 It adds `fetch` as global so its API is consistent between client and server. It uses standard fetch() method on client's side and [undici](https://github.com/nodejs/undici) - which is an http client written for Node.js - on server's side.
 
-# v8
+# Buffer
 
-It applies `v8` module for server environment. It is not defined for browser and this difference should be taken into account when determining if v8 methods should be used or not.
+It provides Buffer object with API consistent between server and client. It uses `safe-buffer` library for node environment and `buffer` for browser.
 
 ## Installation
 
@@ -46,13 +46,12 @@ fetch("//api.redstone.finance")
 #### v8
 
 ```js
-import { v8 } from "redstone-isomorphic";
+import { Buffer } from "redstone-isomorphic";
 
-const deepCopy = (input) => {
-  if (!!v8) {
-    return v8.deserialize(v8.serialize(input));
-  }
+const arr = new Uint16Array(2);
 
-  return JSON.parse(JSON.stringify(input));
-};
+arr[0] = 5000;
+arr[1] = 4000;
+
+const buf = Buffer.from(arr.buffer);
 ```

@@ -16,4 +16,4 @@ if (!global.fetch) {
 	global.Request = realFetch.Request;
 }
 
-module.exports.v8 = require("v8");
+module.exports.Buffer = require("safe-buffer").Buffer;
