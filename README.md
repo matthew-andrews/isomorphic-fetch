@@ -43,7 +43,7 @@ fetch("//api.redstone.finance")
   });
 ```
 
-#### v8
+#### Buffer
 
 ```js
 import { Buffer } from "redstone-isomorphic";
