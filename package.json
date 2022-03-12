@@ -27,6 +27,6 @@
   "dependencies": {
     "buffer": "^6.0.3",
     "safe-buffer": "^5.1.2",
-    "undici": "^4.12.2"
+    "undici": "^4.15.1"
   }
 }
