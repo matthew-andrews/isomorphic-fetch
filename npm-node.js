@@ -1,6 +1,7 @@
 "use strict";
 
-var realFetch = require("undici").fetch;
+var undici = require("undici");
+var realFetch = undici.fetch;
 
 module.exports = function (url, options) {
 	if (/^\/\//.test(url)) {
@@ -11,9 +12,9 @@ module.exports = function (url, options) {
 
 if (!global.fetch) {
 	global.fetch = module.exports;
-	global.Response = realFetch.Response;
-	global.Headers = realFetch.Headers;
-	global.Request = realFetch.Request;
+	global.Response = undici.Response;
+	global.Headers = undici.Headers;
+	global.Request = undici.Request;
 }
 
 module.exports.Buffer = require("safe-buffer").Buffer;
