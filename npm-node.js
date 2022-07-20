@@ -3,7 +3,9 @@
 var undici = require("undici");
 var realFetch = undici.fetch;
 
-const { TextDecoder, TextEncoder } = require(`util`);
+var util  = require("util");
+var TextEncoder = util.TextEncoder;
+var TextDecoder = util.TextDecoder;
 
 module.exports = function (url, options) {
 	if (/^\/\//.test(url)) {
