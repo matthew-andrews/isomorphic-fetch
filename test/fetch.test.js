@@ -1,7 +1,7 @@
 /*global fetch*/
 "use strict";
 
-require("../npm-node");
+require("../src/npm-node");
 var expect = require("chai").expect;
 var good = {
 	message: "hello, i'm fine",
