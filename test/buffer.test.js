@@ -1,4 +1,4 @@
-var Buffer = require("../npm-node").Buffer;
+var Buffer = require("../src/npm-node").Buffer;
 
 var expect = require("chai").expect;
 

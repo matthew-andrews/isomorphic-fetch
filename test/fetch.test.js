@@ -1,7 +1,7 @@
 /*global fetch*/
 "use strict";
 
-require("../npm-node");
+require("../src/npm-node");
 var expect = require("chai").expect;
 var good = {
 	message: "hello, i'm fine",
@@ -23,7 +23,7 @@ describe("fetch", function () {
 	});
 
 	it("should facilitate the making of requests", function (done) {
-		fetch("//api.redstone.finance/succeed")
+		fetch("https://api.redstone.finance/succeed")
 			.then(responseToText)
 			.then(function (data) {
 				expect(data.message).to.equal(good.message);
@@ -33,7 +33,7 @@ describe("fetch", function () {
 	});
 
 	it("should do the right thing with bad requests", function (done) {
-		fetch("//api.redstone.finance/fail")
+		fetch("https://api.redstone.finance/fail")
 			.then(responseToText)
 			.catch(function (err) {
 				expect(err.toString()).to.equal("Error: Bad server response");
