@@ -6,7 +6,8 @@
   "main": "dist/src/npm-node.js",
   "scripts": {
     "files": "find . -name '*.js' ! -path './node_modules/*'",
-    "test": "jshint `npm run -s files` && lintspaces -i js-comments -e .editorconfig `npm run -s files` && mocha",
+    "lint": "jshint `npm run -s files` && lintspaces -i js-comments -e .editorconfig `npm run -s files`",
+    "test": "mocha",
     "build": "tsc"
   },
   "repository": {
@@ -28,7 +29,6 @@
   },
   "dependencies": {
     "buffer": "^6.0.3",
-    "safe-buffer": "^5.1.2",
     "undici": "^5.8.0"
   }
 }
