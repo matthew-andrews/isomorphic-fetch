@@ -1,6 +1,6 @@
 {
-  "name": "redstone-isomorphic",
-  "version": "1.1.9",
+  "name": "warp-isomorphic",
+  "version": "1.0.0",
   "description": "Isomorphic API for Node & browser",
   "browser": "dist/src/npm-browser.js",
   "main": "dist/src/npm-node.js",
@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/redstone-finance/redstone-isomorphic.git"
+    "url": "https://github.com/warp/warp-isomorphic.git"
   },
-  "author": "Redstone Team <dev@redstone.finance>",
+  "author": "Warp Team <dev@warp.cc>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/redstone-finance/redstone-isomorphic/issues"
+    "url": "https://github.com/warp-contracts/warp-isomorphic/issues"
   },
-  "homepage": "https://github.com/redstone-finance/redstone-isomorphic#readme",
+  "homepage": "https://github.com/warp-contracts/warp-isomorphic#readme",
   "devDependencies": {
     "chai": "^4.2.0",
     "jshint": "^2.5.11",

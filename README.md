@@ -1,6 +1,6 @@
-# redstone-isomorphic
+# warp-isomorphic
 
-redstone-isomorphic is a fork of [isomorphic-fetch](https://github.com/matthew-andrews/isomorphic-fetch).
+warp-isomorphic is a fork of [isomorphic-fetch](https://github.com/matthew-andrews/isomorphic-fetch).
 
 # fetch
 
@@ -8,20 +8,20 @@ It adds `fetch` as global so its API is consistent between client and server. It
 
 # Buffer
 
-It provides Buffer object with API consistent between server and client. It uses `safe-buffer` library for node environment and `buffer` for browser.
+It provides Buffer object with API consistent between server and client.
 
 ## Installation
 
 ### NPM
 
 ```sh
-npm install --save redstone-isomorphic
+npm install --save warp-isomorphic
 ```
 
 ### YARN
 
 ```sh
-yarn add redstone-isomorphic
+yarn add warp-isomorphic
 ```
 
 ## Usage
@@ -29,7 +29,7 @@ yarn add redstone-isomorphic
 #### fetch
 
 ```js
-import "redstone-isomorphic";
+import "warp-isomorphic";
 
 fetch("//api.redstone.finance")
   .then(function (response) {
@@ -46,7 +46,7 @@ fetch("//api.redstone.finance")
 #### Buffer
 
 ```js
-import { Buffer } from "redstone-isomorphic";
+import { Buffer } from "warp-isomorphic";
 
 const arr = new Uint16Array(2);
 
