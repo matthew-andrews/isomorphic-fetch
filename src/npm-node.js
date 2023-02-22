@@ -3,6 +3,7 @@
 var undici = require("undici");
 var realFetch = undici.fetch;
 
+var crypto = require('crypto');
 var util = require("util");
 var TextEncoder = util.TextEncoder;
 var TextDecoder = util.TextDecoder;
@@ -27,4 +28,9 @@ if (!global.TextEncoder) {
 	global.TextEncoder = TextEncoder;
 }
 
-module.exports.Buffer = Buffer;
+module.exports = {
+	Buffer: Buffer,
+	Crypto: {
+		...crypto.webcrypto
+	}
+}
